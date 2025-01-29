@@ -24,7 +24,7 @@ class Automibile(Vehicle):
                 if len(str(self.year)) == 4 and self.year < 1980:
                     break
                 else:
-                    print("Year must be 4 digits")
+                    print("Year must be 4 digits and greater than 1980")
             except ValueError:
                 print("Year must be a number")
         self.model = input("Enter the model: ").capitalize()
