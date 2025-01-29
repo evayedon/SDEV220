@@ -21,7 +21,7 @@ class Automibile(Vehicle):
         while True:
             try:
                 self.year = int(input("Enter the year (4 digits): "))
-                if len(str(self.year)) == 4 and self.year < 1980:
+                if len(str(self.year)) == 4 and self.year > 1980:
                     break
                 else:
                     print("Year must be 4 digits and greater than 1980")
